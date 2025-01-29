@@ -4,9 +4,14 @@ DÙNG LỆNH NÀY
 
 Với Linux, Ubuntu:
 
+<<<<<<< HEAD
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+=======
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs
+https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+>>>>>>> 810d2f5 (truong)
 
 Khi tải xong tài nguyên về máy tại init.vim nhớ :PlugInstall nhé
 
