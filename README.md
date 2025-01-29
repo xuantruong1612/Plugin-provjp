@@ -10,4 +10,4 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 Khi tải xong tài nguyên về máy tại init.vim nhớ :PlugInstall nhé
 
-Luôn cập nhật nvim mới nên có nhiều commit.
+Luôn cập nhật nvim nên có nhiều commit.
