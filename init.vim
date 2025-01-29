@@ -11,17 +11,23 @@ source ~/.config/nvim/colors/theme.vim
 
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
 colorscheme dracula
 
 
-
 " highlight background
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
+" set up nvim itself
+set noshowmode
+
+"=====================================================
+
+" source file
 source ~/.config/nvim/lua/nerdtree.vim
 source ~/.config/nvim/lua/vim_airline.vim
 
