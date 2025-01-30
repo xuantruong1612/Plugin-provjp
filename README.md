@@ -35,7 +35,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
  
     ***Nếu không có thì tự tạo file tương ứng***
     
- 2. Copy code trong [**đây**](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào *plug.vim*
+ 2. Copy code trong [*đây*](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào *plug.vim*
 
 ---
 # Khi dùng *plug* thì trong *init.vim* nhớ *:PlugInstall* nhé!!!
