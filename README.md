@@ -1,6 +1,6 @@
 # Nvim Config by Xuân Trường
-
-## 1. Tài nguyên quan trọng
+---
+# Tài nguyên quan trọng
 - Với MacOs, Linux:
 1. MacOs
 ```c
@@ -25,8 +25,16 @@ curl -fLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs \
 md -Path "$HOME\AppData\Local\nvim\autoload" -ErrorAction Ignore
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile "$HOME\AppData\Local\nvim\autoload\plug.vim"
 ```
----
-- Khi dùng *plug* thì trong **init.vim** nhớ **:PlugInstall** nhé!!!
+# Nếu k tải được tài nguyên thì có thể tải thủ công
+- Linux, MacOs:
+Mở .local/share/nvim/site/autoload/plug.vim
 
-# Luôn cập nhật nvim nên có nhiều commit.
+Copy code trong [**đây**](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào **plug.vim**
+
+Nếu không có thì **tự tạo** file tương ứng
+
+---
+# Khi dùng *plug* thì trong **init.vim** nhớ **:PlugInstall** nhé!!!
+---
+# Luôn cập nhật nvim nên có nhiều commit nhé!!!
 
