@@ -38,7 +38,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
     ***Nếu không có thì tự tạo file tương ứng***
 
 ---
-# Khi dùng *plug* thì trong **init.vim** nhớ **:PlugInstall** nhé!!!
+# Khi dùng *plug* thì trong *init.vim* nhớ *:PlugInstall* nhé!!!
 ---
 # Luôn cập nhật nvim nên có nhiều commit nhé!!!
 
