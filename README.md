@@ -4,9 +4,12 @@
 - Với MacOs, Linux:
 1. MacOs
 ```c
-sudo apt install curl -y
+brew install curl
 ```
 2. Lunux
+```c
+sudo apt install curl -y
+```
 ```c
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
