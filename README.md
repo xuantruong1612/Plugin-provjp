@@ -3,11 +3,11 @@
 # Tài nguyên quan trọng
 - **Với MacOs, Linux:**
  
-*1. MacOs*
+ *1. MacOs*
 ```c
 brew install curl
 ```
-*2. Linux*
+ *2. Linux*
 ```c
 sudo apt install curl -y
 ```
@@ -18,17 +18,18 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 - **Với Windown**
 
-*1. Git Bash*
+ *1. Git Bash*
 ```c
 curl -fLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-*2. PowerShell*
+ *2. PowerShell*
 ```c
 md -Path "$HOME\AppData\Local\nvim\autoload" -ErrorAction Ignore
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile "$HOME\AppData\Local\nvim\autoload\plug.vim"
 ```
 # Nếu k tải được tài nguyên thì có thể tải thủ công
+
 - **Linux, MacOs:**
 Mở .local/share/nvim/site/autoload/plug.vim
 
