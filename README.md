@@ -1,6 +1,6 @@
 # Nvim Config by Xuân Trường
 ---
-
+ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 # Tài nguyên quan trọng
 - **Với MacOs, Linux:**
  
@@ -42,8 +42,8 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
 
 # Khi dùng *plug* thì trong *init.vim* nhớ *:PlugInstall* nhé!!!
 ***
-
-
+ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 # Luôn *upgrade* nvim nên có nhiều *commit* nhé!!!
 ***
 
