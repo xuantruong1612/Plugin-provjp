@@ -1,6 +1,6 @@
 # Nvim Config by Xuân Trường
-## 1. Tải 1 số tài nguyên quan trọng
-# DÙNG LỆNH NÀY
+
+## 1. Tài nguyên quan trọng
 - Với Linux, Ubuntu:
 ```c
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -9,5 +9,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 - Khi tải xong tài nguyên về máy tại **init.vim** nhớ **:PlugInstall** nhé
 
-## Luôn cập nhật nvim nên có nhiều commit.
+# Luôn cập nhật nvim nên có nhiều commit.
 
