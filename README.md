@@ -25,6 +25,7 @@ curl -fLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs \
 md -Path "$HOME\AppData\Local\nvim\autoload" -ErrorAction Ignore
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile "$HOME\AppData\Local\nvim\autoload\plug.vim"
 ```
+---
 - Khi dùng *plug* thì trong **init.vim** nhớ **:PlugInstall** nhé!!!
 
 # Luôn cập nhật nvim nên có nhiều commit.
