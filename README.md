@@ -2,6 +2,7 @@
 ---
 # Tài nguyên quan trọng
 - **Với MacOs, Linux:**
+ 
 *1. MacOs*
 ```c
 brew install curl
