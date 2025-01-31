@@ -14,11 +14,11 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " - Theme -
-source ~/.config/nvim/colors/theme.vim				" Dracula
+source ~/.config/nvim/colors/theme.vim                " Dracula
 
 " - File browser -
-Plug 'preservim/nerdtree'					" File browser
-Plug 'Xuyuanp/nerdtree-git-plugin'				" Git status
+Plug 'preservim/nerdtree'                             " File browser
+Plug 'Xuyuanp/nerdtree-git-plugin'                    " Git status
 
 " - File search -
 Plug 'junegunn/fzf', {'do': { -> fzf#install() } }		" Fuzzy finder
@@ -29,7 +29,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " - Terminal -
-Plug 'voldikss/vim-floaterm'					" Float terminal
+Plug 'voldikss/vim-floaterm'                          " Float terminal
 
 
 call plug#end()
