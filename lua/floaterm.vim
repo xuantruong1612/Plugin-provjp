@@ -1,4 +1,5 @@
 " Woking with Terminal
+
 let g:floaterm_position = 'topright'
 let g:floaterm_width = 0.6
 let g:floaterm_height = 0.8
@@ -14,15 +15,15 @@ hi Floaterm guibg=Grey15
 hi FloatermBorder guifg=Orange guibg=DarkGreen
 " hi FloatermNC guibg=darkred
 
-autocmd User FloatermOpen        " được kích hoạt sau khi mở một bộ nổi mới/tồn tại
+autocmd User FloatermOpen                             " được kích hoạt sau khi mở một bộ nổi mới/tồn tại
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Leader = " " = space
 
 " Open a new terminal
-nnoremap <silent> <leader>to    :FloatermNew<CR>
-tnoremap <silent> <leader>to    <C-\><C-n>:FloatermNew<CR>
+nnoremap <silent> <leader>to :FloatermNew<CR>         " space + to
+tnoremap <silent> <leader>to <C-\><C-n>:FloatermNew<CR>
 
 " Tắt terminal
 nnoremap <silent> <leader>tk :FloatermKill<CR>:FloatermPrev<CR>
