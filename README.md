@@ -50,4 +50,4 @@ Khi dùng *plugins* thì trong ***init.vim*** nhớ ***:PlugInstall*** nhé!!!
 <details>ㅤㅤㅤㅤㅤㅤㅤㅤ
 <summary># Thắc mắc </summary>
 Luôn *upgrade* nvim nên có nhiều *commit* nhé!!!ㅤㅤㅤㅤㅤㅤㅤ
-***
+
