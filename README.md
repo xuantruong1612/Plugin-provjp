@@ -1,5 +1,4 @@
 # Nvim Config by *Xuân Trường*
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 ## *Tài nguyên* quan trọng
 - **Với MacOs, Linux:**
  
