@@ -48,5 +48,6 @@ git clone https:github.com/xuantruong1612/nvim.git
 Khi dùng *plugins* thì trong ***init.vim*** nhớ ***:PlugInstall*** nhé!!!
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 <details>ㅤㅤㅤㅤㅤㅤㅤㅤ
-<summary>Thắc mắc</summary>Luôn upgrade nvim nên có nhiều commit nhé!!!ㅤㅤㅤㅤㅤㅤㅤ
+<summary>Thắc mắc</summary>
+Luôn upgrade nvim nên có nhiều commit nhé!!!ㅤㅤㅤㅤㅤㅤㅤ
 
