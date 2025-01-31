@@ -2,11 +2,11 @@
 ## *Tài nguyên* quan trọng
 - **Với MacOs, Linux:**
  
-*1. MacOs*
+  *1. MacOs*
 ```c
 brew install curl
 ```
-*2. Linux*
+   *2. Linux*
 ```c
 sudo apt install curl -y
 ```
