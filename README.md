@@ -48,7 +48,7 @@ Khi dùng *plugins* thì trong ***init.vim*** nhớ ***:PlugInstall*** nhé!!!
 ---
 <details>ㅤㅤㅤㅤㅤㅤㅤㅤ
 <summary>Ngoài lề</summary>
-<p align="left">1. Luôn upgrade nvim nên có nhiều commit nhé!!!
+<p align="left">1. Luôn update nvim nên có nhiều commit nhé!!!
 <p align="left">2. Đây là mình build nên bạn có thể chỉnh sửa để phù hợp.
 <p align="left">3. Tôn trọng bản quyền.
 </details>
