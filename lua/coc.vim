@@ -1,7 +1,8 @@
 " Woking with COC
 
-" Extensions need to be installed at first startup
 let g:coc_disable_startup_warning = 1
+
+" Extensions need to be installed at first startup
 let g:coc_global_extensions = [
       \'coc-css',
       \'coc-html',
