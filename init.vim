@@ -31,6 +31,12 @@ Plug 'vim-airline/vim-airline-themes'
 " - Terminal -
 Plug 'voldikss/vim-floaterm'                                " Float terminal
 
+" - Code intellisense -     Tự hoàn thành code
+" Plug 'neoclide/coc.nvim', 
+"   \ {'branch': 'release'}                                 " Language server protocol (LSP)
+" Plug 'jiangmiao/auto-pairs'                               " Parenthesis auto
+" Plug 'mattn/emmet-vim' 
+" Plug 'preservim/nerdcommenter'                            " Comment code
 
 call plug#end()
 
@@ -53,5 +59,5 @@ source ~/.config/nvim/lua/nerdtree.vim
 source ~/.config/nvim/lua/vim_airline.vim
 source ~/.config/nvim/lua/fzf.vim
 source ~/.config/nvim/lua/floaterm.vim
-
+source ~/.config/nvim/lua/coc.vim
 
