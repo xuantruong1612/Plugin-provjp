@@ -39,7 +39,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
 
 # Install
 ```c
-git clone https:github.com/xuantruong1612/nvim.git
+git clone https://github.com/xuantruong1612/nvim.git
 ```
 
 # Chú ý
