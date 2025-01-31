@@ -1,5 +1,5 @@
 # Nvim Config by *Xuân Trường*
----
+
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 # *Tài nguyên* quan trọng
 - **Với MacOs, Linux:**
@@ -38,7 +38,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
     
  2. Copy code trong [*đây*](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào *plug.vim*
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
----
+
 # Install
 ```c
 git clone https:github.com/xuantruong1612/nvim.git
