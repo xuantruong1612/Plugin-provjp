@@ -32,5 +32,5 @@ let g:nerdtree_synsc_cursorline = 1
 " F2 to toggle
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
-" Thoát Nvim nếu còn mỗi NEARTree
+" Thoát Nvim nếu còn mỗi NERDTree
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
