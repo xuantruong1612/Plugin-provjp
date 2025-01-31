@@ -7,27 +7,31 @@
 
 call plug#begin('~/.config/nvim/plugged')
 
+" -Theme-
 source ~/.config/nvim/colors/theme.vim
 
+" -Nerdtree-
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" -Airline-
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
+" -Theme-
 colorscheme dracula
 
-
-" highlight background
+" -Highlight background-
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
-" set up nvim itself
+" -Set up nvim itself-
 set noshowmode
 
 "=====================================================
 
-" source file
+" -Source file-
 source ~/.config/nvim/lua/nerdtree.vim
 source ~/.config/nvim/lua/vim_airline.vim
 
