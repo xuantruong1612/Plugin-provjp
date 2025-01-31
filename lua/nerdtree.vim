@@ -1,5 +1,8 @@
 " Woking with NERDTree
-let g:NERDTreeShowBookmarks = 1
+
+" Show Book Mark 
+" "m" để mở menu và chọn add bookmark
+let g:NERDTreeShowBookmarks = 1                " truy cập nhanh file hay dùng
 let g:NERDTreeWinSize = 25
 
 " Mapleader
