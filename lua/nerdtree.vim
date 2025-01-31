@@ -30,7 +30,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 
 " Hightlight current file
-let g:nerdtree_synsc_cursorline = 1
+let g:nerdtree_synsc_cursorline = 1           " cursor line
 
 " F2 to toggle
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
