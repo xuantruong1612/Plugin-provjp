@@ -2,10 +2,13 @@
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeWinSize = 25
 
+" Mapleader
+let mapleader = " "
+
 " Git status icon
 " Modified      Tệp đã bị sửa nhưng chưa được git add.
 " Staged        Tệp đã được git add, chuẩn bị commit.
-" Untracked     Tệp mới chưa được theo dõi (git add để theo dõi).
+" Untracked     Tệp mới chưa được theo dõi (git add . để theo dõi).
 " Renamed       Tệp đã bị đổi tên hoặc di chuyển.
 " Unmerged      Có xung đột (merge conflict) cần giải quyết.
 " Deleted       Tệp đã bị xóa và thay đổi chưa được commit.
@@ -14,15 +17,15 @@ let g:NERDTreeWinSize = 25
 " Clean         Không có thay đổi, trạng thái sạch.
 " Unknown       Trạng thái không xác định.
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-                \ 'Modified'  :'✹',
+                \ 'Modified'  :'MOD',
                 \ 'Staged'    :'✚',
                 \ 'Untracked' :'✭',
-                \ 'Renamed'   :'➜',
+                \ 'Renamed'   :'RENAMED',
                 \ 'Unmerged'  :'═',
                 \ 'Deleted'   :'✖',
-                \ 'Dirty'     :'✗',
+                \ 'Dirty'     :'DIR',
                 \ 'Ignored'   :'☒',
-                \ 'Clean'     :'✔︎',
+                \ 'Clean'     :'CLEAN',
                 \ 'Unknown'   :'?',
                 \ }
 

@@ -4,36 +4,54 @@
 " /   / /_/ / ___ |/ /|  /    / / / _, _/ /_/ / /_/ / /|  / /_/ /
 "/_/|_\____/_/  |_/_/ |_/    /_/ /_/ |_|\____/\____/_/ |_/\____/
 
+"https://www.facebook.com/serayeuem
+"https://github.com/xuantruong1612
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin('~/.config/nvim/plugged')
 
-" -Theme-
-source ~/.config/nvim/colors/theme.vim
+" - Theme -
+source ~/.config/nvim/colors/theme.vim				" Dracula
 
-" -Nerdtree-
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" - File browser -
+Plug 'preservim/nerdtree'					" File browser
+Plug 'Xuyuanp/nerdtree-git-plugin'				" Git status
 
-" -Airline-
+" - File search -
+Plug 'junegunn/fzf', {'do': { -> fzf#install() } }		" Fuzzy finder
+Plug 'junegunn/fzf.vim'
+
+" - Status bar -
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" - Terminal -
+Plug 'voldikss/vim-floaterm'					" Float terminal
+
 
 call plug#end()
 
-" -Theme-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" - Theme -
 colorscheme dracula
 
-" -Highlight background-
+" - Highlight background -
 hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
-" -Set up nvim itself-
+" - Set up nvim itself -
 set noshowmode
 
-"=====================================================
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" -Source file-
+" - Source file -
 source ~/.config/nvim/lua/nerdtree.vim
 source ~/.config/nvim/lua/vim_airline.vim
-
+source ~/.config/nvim/lua/fzf.vim
+source ~/.config/nvim/lua/floaterm.vim
 
 
