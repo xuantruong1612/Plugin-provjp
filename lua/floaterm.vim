@@ -14,7 +14,7 @@ hi Floaterm guibg=Grey15
 hi FloatermBorder guifg=Orange guibg=DarkGreen
 "hi FloatermNC guibg=darkred
 
-autocmd User FloatermOpen        " triggered after opening a new/existed floater
+autocmd User FloatermOpen        " được kích hoạt sau khi mở một bộ nổi mới/tồn tại
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
