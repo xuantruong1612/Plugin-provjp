@@ -3,7 +3,7 @@
 " Show Book Mark 
 " "m" để mở menu và chọn add bookmark
 let g:NERDTreeShowBookmarks = 1                " truy cập nhanh file hay dùng
-let g:NERDTreeWinSize = 20                     " NERDTree chiếm 25%
+let g:NERDTreeWinSize = 20                     " NERDTree chiếm 20%
 
 " Mapleader
 let mapleader = " "
