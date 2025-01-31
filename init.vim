@@ -21,7 +21,7 @@ Plug 'preservim/nerdtree'                                   " File browser
 Plug 'Xuyuanp/nerdtree-git-plugin'                          " Git status
 
 " - File search -
-Plug 'junegunn/fzf', {'do': { -> fzf#install() } }	   	" Fuzzy finder
+Plug 'junegunn/fzf', {'do': { -> fzf#install() } }	" Fuzzy finder
 Plug 'junegunn/fzf.vim'
 
 " - Status bar -
