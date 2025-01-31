@@ -21,7 +21,7 @@ Plug 'preservim/nerdtree'                                   " File browser
 Plug 'Xuyuanp/nerdtree-git-plugin'                          " Git status
 
 " - File search -
-Plug 'junegunn/fzf', {'do': { -> fzf#install() } }		" Fuzzy finder
+Plug 'junegunn/fzf', {'do': { -> fzf#install() } }	      	" Fuzzy finder
 Plug 'junegunn/fzf.vim'
 
 " - Status bar -
@@ -29,7 +29,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " - Terminal -
-Plug 'voldikss/vim-floaterm'                          " Float terminal
+Plug 'voldikss/vim-floaterm'                                  " Float terminal
 
 
 call plug#end()
