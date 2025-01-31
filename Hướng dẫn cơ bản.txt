@@ -44,8 +44,8 @@ Mở/ Đóng file
 :q! - thoát mà k lưu
 :wq - save và thoát
 :vs - vertical split - mở file và chia đôi cửa sổ
-  Ctrl + w + phím h j k l - di chuyển giữa các ô
-  Ctrl + w + H J K L - đổi vị trí giữa các ô
+     Ctrl + w + phím h j k l - di chuyển giữa các ô
+     Ctrl + w + H J K L - đổi vị trí giữa các ô
 
 n...map: map riêng cho mode Normal
 i...map: Insert
