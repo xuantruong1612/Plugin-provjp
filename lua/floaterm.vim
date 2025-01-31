@@ -18,6 +18,8 @@ autocmd User FloatermOpen        " được kích hoạt sau khi mở một bộ
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Leader = " "
+
 " Open a new terminal
 nnoremap <silent> <leader>to    :FloatermNew<CR>
 tnoremap <silent> <leader>to    <C-\><C-n>:FloatermNew<CR>
