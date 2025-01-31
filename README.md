@@ -45,6 +45,12 @@ git clone https://github.com/xuantruong1612/nvim.git
 # Chú ý
 Khi dùng *plugins* thì trong ***init.vim*** nhớ ***:PlugInstall*** nhé!!!
 
+<details>ㅤㅤㅤㅤㅤㅤㅤㅤ
+<summary>Ưu tiên</summary>
+<p align="left">Nodejs (Mới nhất nếu có thể)
+<p align="left">Python
+</details>
+
 ---
 <details>ㅤㅤㅤㅤㅤㅤㅤㅤ
 <summary>Ngoài lề</summary>
