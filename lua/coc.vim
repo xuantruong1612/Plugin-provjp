@@ -1,8 +1,10 @@
 " Woking with COC
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Tắt cảnh báo khi coc.nvim khởi động
 let g:coc_disable_startup_warning = 1
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Extensions need to be installed at first startup
+" Danh sách các extension sẽ được cài đặt khi khởi động lần đầu
 let g:coc_global_extensions = [
       \'coc-css',
       \'coc-html',
@@ -10,35 +12,45 @@ let g:coc_global_extensions = [
       \'coc-jedi',
       \'coc-vimlsp',
       \]
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
 " utf-8 byte sequence
+" Đảm bảo rằng các tệp tin được xử lý với mã hóa UTF-8.
 set encoding=utf-8
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Some servers have issues with backup files, see #649
+" Ngừng tạo các tệp sao lưu khi chỉnh sửa.
 set nobackup
 set nowritebackup
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
 " delays and poor user experience
+" Giảm thời gian làm mới (mặc định là 4000ms).
 set updatetime=300
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved
+" Luôn hiển thị cột dấu (sign column) để văn bản không bị dịch chuyển khi xuất hiện các chẩn đoán lỗi.
 set signcolumn=yes
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use tab for trigger completion with characters ahead and navigate
 " NOTE: There's always complete item selected by default, you may want to enable
 " no select by `"suggest.noselect": true` in your configuration file
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" <TAB> kích hoạt danh sách hoàn thành nếu có, hoặc thêm một tab nếu không có đề xuất.
+" <S-TAB> di chuyển ngược lại trong danh sách hoàn thành.
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Make <CR> to accept selected completion item or notify coc.nvim to format
+" <CR> chấp nhận mục được chọn trong danh sách hoàn thành.
 " <C-g>u breaks current undo, please make your own choice
+" <C-g>u Vim sẽ phá vỡ (break) trạng thái hoàn tác (undo) hiện tại
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
@@ -46,13 +58,16 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use <c-space> to trigger completion
+" <c-space> (hoặc <c-@> cho Vim) kích hoạt danh sách hoàn thành thủ công.
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
