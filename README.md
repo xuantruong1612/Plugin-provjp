@@ -1,7 +1,7 @@
-# Nvim Config by Xuân Trường
+# Nvim Config by *Xuân Trường*
 ---
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-# Tài nguyên quan trọng
+# *Tài nguyên* quan trọng
 - **Với MacOs, Linux:**
  
 *1. MacOs*
@@ -29,7 +29,7 @@ curl -fLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs \
 md -Path "$HOME\AppData\Local\nvim\autoload" -ErrorAction Ignore
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile "$HOME\AppData\Local\nvim\autoload\plug.vim"
 ```
-# Nếu k tải được tài nguyên thì có thể tải thủ công
+# Nếu k tải được *tài nguyên* thì có thể tải thủ công
 - **Linux, MacOs:**
 
  1. Mở .local/share/nvim/site/autoload/plug.vim
@@ -39,7 +39,11 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
  2. Copy code trong [*đây*](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào *plug.vim*
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 ---
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+
+```c
+git clone https:github.com/xuantruong1612/nvim.git
+```
+
 # Khi dùng *plug* thì trong *init.vim* nhớ *:PlugInstall* nhé!!!
 ***
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
