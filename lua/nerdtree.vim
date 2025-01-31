@@ -18,10 +18,10 @@ let mapleader = " "
 " Unknown       Trạng thái không xác định.
 let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Modified'  :'MOD',
-                \ 'Staged'    :'✚',
-                \ 'Untracked' :'✭',
+                \ 'Staged'    :'STAG',
+                \ 'Untracked' :'UNTRACKED',
                 \ 'Renamed'   :'RENAMED',
-                \ 'Unmerged'  :'═',
+                \ 'Unmerged'  :'!',
                 \ 'Deleted'   :'✖',
                 \ 'Dirty'     :'DIR',
                 \ 'Ignored'   :'☒',
