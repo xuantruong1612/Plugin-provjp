@@ -1,0 +1,65 @@
+Mode Insert
+i - mode Insert (trước con trỏ)
+Esc - mặc định (Normal)
+a - mode Insert (sau con trỏ), A - cuối dòng
+o - tạo dòng mới ở dưới và mode Insert tại đầu dòng, O - trên
+u - Undo (back)
+Ctrl + r - Redo
+
+Mode Visual
+v - mode Visual (bôi đen), V - bôi đen cả dòng
+viw - visual in word (bôi đen word chỗ con trỏ)
+ggVG - bôi đen cả văn bản
+
+Mode Command: mode gõ các lệnh
+: - mode Command
+:echo giá_trị - in một giá trị nào đó (VD: echo "Hello" --> Hello)
+:let biến = giá_trị - gán 1 biến (let x = 10, echo x --> 10)
+mũi tên đi lên - trở lại command trước đó
+
+Điều hướng 
+phím lên xuống hoặc h j k l
+gg - di chuyển con trỏ lên đầu file, G - cuối
+:số_dòng - đến dòng mong muốn
+w - di chuyển đến word tiếp theo
+b - di chuyển đến word trước đó
+0 - di chuyển đến đầu dòng
+$ - di chuyển đến cuối dòng
+
+Copy/ Cut/ Paste
+y - copy 1 đoạn text được bôi đen (V + y)
+d - cut 1 đoạn text được bôi đen, hoặc delete
+p - paste vào dòng bên dưới con trỏ, P - trên
+
+Search
+/chuỗi_cần_tìm - tìm kiếm 1 chuỗi kí tự
+* - tìm kiếm chuỗi tại vị trí con trỏ
+n - di chuyển con trỏ sang kết quả tìm kiếm tiếp theo, N - trước đó
+:%s/test_cũ/text_mới - thay thế text
+
+Mở/ Đóng file
+:e tên_file - mở file
+:q - thoát VIM
+:w - save
+:q! - thoát mà k lưu
+:wq - save và thoát
+:vs - vertical split - mở file và chia đôi cửa sổ
+  Ctrl + w + phím h j k l - di chuyển giữa các ô
+  Ctrl + w + H J K L - đổi vị trí giữa các ô
+
+n...map: map riêng cho mode Normal
+i...map: Insert
+v...map: Visual
+
+
+
+
+
+
+
+
+
+
+
+
+
