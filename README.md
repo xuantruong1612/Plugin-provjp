@@ -30,11 +30,11 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
 # Nếu k tải được *tài nguyên* thì có thể tải thủ công
 - **Linux, MacOs:**
 
- 1. Mở .local/share/nvim/site/autoload/plug.vim
+ 1. Mở **.local/share/nvim/site/autoload/plug.vim**
  
     **Nếu không có thì ***tự tạo*** file tương ứng**
     
- 2. Copy code trong [*đây*](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào *plug.vim*
+ 2. Copy code trong [*đây*](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào ***plug.vim***
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 
 # Install
