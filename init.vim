@@ -29,7 +29,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " - Terminal -
-Plug 'voldikss/vim-floaterm'                                 " Float terminal
+Plug 'voldikss/vim-floaterm'                                " Float terminal
 
 
 call plug#end()
