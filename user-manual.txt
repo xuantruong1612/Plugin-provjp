@@ -21,7 +21,8 @@ mũi tên đi lên - trở lại command trước đó
 phím lên xuống hoặc h j k l
 gg - di chuyển con trỏ lên đầu file, G - cuối
 :số_dòng - đến dòng mong muốn
-w - di chuyển đến word tiếp theo
+w - di chuyển đến word tiếp theo (trước)
+e - di chuyển đến word tiếp theo (sau)
 b - di chuyển đến word trước đó
 0 - di chuyển đến đầu dòng
 $ - di chuyển đến cuối dòng
