@@ -54,9 +54,9 @@ set noshowmode
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " - Source file -
-source ~/.config/nvim/lua/nerdtree.vim
-source ~/.config/nvim/lua/vim_airline.vim
-source ~/.config/nvim/lua/fzf.vim
-source ~/.config/nvim/lua/floaterm.vim
-source ~/.config/nvim/lua/coc.vim
+source ~/.config/nvim/settings/nerdtree.vim
+source ~/.config/nvim/settings/vim_airline.vim
+source ~/.config/nvim/settings/fzf.vim
+source ~/.config/nvim/settings/floaterm.vim
+source ~/.config/nvim/settings/coc.vim
 
