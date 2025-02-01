@@ -1,13 +1,13 @@
 " Woking with NERDTree
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Show Book Mark 
 " "m" để mở menu và chọn add bookmark
 let g:NERDTreeShowBookmarks = 1    " file hay dùng
 let g:NERDTreeWinSize = 20         " NERDTree chiếm 20%
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapleader
 let mapleader = " "
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git status icon
 " Modified  Tệp đã bị sửa nhưng chưa được git add.
 " Staged    Tệp đã được git add, chuẩn bị commit.
@@ -31,14 +31,21 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'CLEAN',
                 \ 'Unknown'   :'?',
                 \ }
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Hightlight current file
 let g:nerdtree_synsc_cursorline = 1    " cursor line
-
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " F2 to toggle
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" lưu file
+nnoremap <leader>w :w<CR>
 
-"
+" đóng
+nnoremap <leader>q :q<CR>
 
+" search
+nnoremap <leader>/ /
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Thoát Nvim nếu còn mỗi NERDTree
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
