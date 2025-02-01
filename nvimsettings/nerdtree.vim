@@ -3,7 +3,7 @@
 " Show Book Mark 
 " "m" để mở menu và chọn add bookmark
 let g:NERDTreeShowBookmarks = 1    " vào file hay dùng
-let g:NERDTreeWinSize = 20         " NERDTree chiếm 20%
+let g:NERDTreeWinSize = 23         " NERDTree chiếm 23%
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapleader
 let mapleader = " "
@@ -39,10 +39,10 @@ let g:nerdtree_synsc_cursorline = 1    " cursor line
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Di chuyển giữa Windown
-nnoremap <leader>h <C-w>h                  " trái h
-nnoremap <leader>j <C-w>j                  " dưới j
-nnoremap <leader>k <C-w>k                  " trên k
-nnoremap <leader>l <C-w>l                  " phải l
+nnoremap <C-h> <C-w>h           " trái h
+nnoremap <C-j> <C-w>j           " dưới j
+nnoremap <C-k> <C-w>k           " trên k
+nnoremap <C-l> <C-w>l           " phải l
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " Thoát Nvim nếu còn mỗi NERDTree
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
