@@ -2,7 +2,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Mapleader
-let mapleader = " "
+let mapleader = ","
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Mouse
 set mouse=a            
@@ -15,7 +15,7 @@ set number             " Số dòng
 set relativenumber     " Số dòng tương đối
 set cursorline         " Highlight dòng hiện tại
 set clipboard=unnamed  " Clipboard
-set colorcolumn=94
+set colorcolumn=90
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Editing
 set expandtab          " Thay tab = khoảng trắng
@@ -27,10 +27,4 @@ set wrap               " Mở rộng dòng
 " Search
 set ignorecase         " K phân biệt hoa/thường
 set incsearch          " Hiển thị KQ k cần Enter
-""""""""""""""""""""""""""""""""""""""""""""""""
-" Size cửa sổ
-nmap <m-l> :vertical resize +1<CR>    
-nmap <m-h> :vertical resize -1<CR>
-nmap <m-j> :resize +1<CR>
-nmap <m-k> :resize -1<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""

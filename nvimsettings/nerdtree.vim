@@ -24,7 +24,7 @@ nnoremap <C-h> <C-w>h           " trái h
 nnoremap <C-j> <C-w>j           " dưới j
 nnoremap <C-k> <C-w>k           " trên k
 nnoremap <C-l> <C-w>l           " phải l
-""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""
 " Di chuyển dòng được chọn lên/xuống
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv

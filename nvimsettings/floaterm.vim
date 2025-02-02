@@ -21,7 +21,7 @@ hi FloatermBorder guifg=Orange guibg=DarkGreen     " Viền (cam), Nền viền 
 autocmd User FloatermOpen   
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-" Open a new terminal           " space + to
+" Open a new terminal
 nnoremap <silent> <leader>to :FloatermNew<CR><script>
 tnoremap <silent> <leader>to <C-\><C-n>:FloatermNew<CR>
 
