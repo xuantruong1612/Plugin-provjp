@@ -22,7 +22,7 @@ autocmd User FloatermOpen
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Open a new terminal
-nnoremap <silent> <leader>t :FloatermNew<CR><script>
+nnoremap <silent> <leader>to :FloatermNew<CR><script>
 tnoremap <silent> <leader>to <C-\><C-n>:FloatermNew<CR>
 
 " Tắt terminal
