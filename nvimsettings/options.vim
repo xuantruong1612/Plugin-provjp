@@ -24,7 +24,13 @@ set softtabstop=4      " Lùi Tab (Ins)
 set shiftwidth=4       " Thụt lề = >>, <<
 set wrap               " Mở rộng dòng
 """"""""""""""""""""""""""""""""""""""""""""""""
-"Search
+" Search
 set ignorecase         " K phân biệt hoa/thường
 set incsearch          " Hiển thị KQ k cần Enter
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Size cửa sổ
+nmap <m-l> :vertical resize +1<CR>    
+nmap <m-h> :vertical resize -1<CR>
+nmap <m-j> :resize +1<CR>
+nmap <m-k> :resize -1<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""
