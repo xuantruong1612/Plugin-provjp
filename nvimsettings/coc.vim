@@ -1,8 +1,9 @@
 " Woking with COC
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Tắt cảnh báo khi coc.nvim khởi động
 let g:coc_disable_startup_warning = 1
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Extensions need to be installed at first startup
 " Danh sách các extension sẽ được cài đặt khi khởi động lần đầu
 let g:coc_global_extensions = [
@@ -12,24 +13,24 @@ let g:coc_global_extensions = [
       \'coc-jedi',
       \'coc-vimlsp',
       \]
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Đảm bảo rằng các tệp tin được xử lý với mã hóa UTF-8
 set encoding=utf-8
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Some servers have issues with backup files, see #649
 " Ngừng tạo các tệp sao lưu khi chỉnh sửa
 set nobackup
 set nowritebackup
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
 " delays and poor user experience
 " Giảm thời gian làm mới (mặc định là 4000ms)
 set updatetime=300
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " diagnostics appear/become resolved
 " Luôn hiển thị cột dấu (sign column) để văn bản không bị dịch chuyển khi xuất hiện các chẩn đoán lỗi
 set signcolumn=yes
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " <TAB> kích hoạt danh sách hoàn thành nếu có, hoặc thêm một tab nếu không có đề xuất
 " <S-TAB> di chuyển ngược lại trong danh sách hoàn thành.
 inoremap <silent><expr> <TAB>
@@ -37,7 +38,7 @@ inoremap <silent><expr> <TAB>
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " <CR> chấp nhận mục được chọn trong danh sách hoàn thành
 " <C-g>u breaks current undo, please make your own choice
 " <C-g>u Vim sẽ phá vỡ (break) trạng thái hoàn tác (undo) hiện tại
@@ -48,7 +49,7 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Use <c-space> to trigger completion
 " <c-space> (hoặc <c-@> cho Vim) kích hoạt danh sách hoàn thành thủ công
 if has('nvim')
@@ -56,14 +57,14 @@ if has('nvim')
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " GoTo code navigation
 " Điều hướng Code
 nmap <silent> gd <Plug>(coc-definition)       " di chuyển tới định nghĩa của một symbol
 nmap <silent> gy <Plug>(coc-type-definition)  " di chuyển tới định nghĩa kiểu (type definition)
 nmap <silent> gi <Plug>(coc-implementation)   " di chuyển tới các triển khai (implementations)
 nmap <silent> gr <Plug>(coc-references)       " di chuyển tới các tham chiếu (references)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Use K to show documentation in preview window
 nnoremap <silent> K :call ShowDocumentation()<CR> " hiển thị tài liệu cho symbol dưới con trỏ, nếu có
 
@@ -74,7 +75,7 @@ function! ShowDocumentation()
     call feedkeys('K', 'in')
   endif
 endfunction
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Highlight the symbol and its references when holding the cursor
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
@@ -104,17 +105,17 @@ nmap <leader>ac  <Plug>(coc-codeaction-cursor)
 " Remap keys for apply code actions affect whole buffer
 nmap <leader>as  <Plug>(coc-codeaction-source)
 nmap <leader>qf  <Plug>(coc-fix-current)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap keys for applying refactor code actions
 " kích hoạt hành động tái cấu trúc Code
 nmap <silent> <leader>re <Plug>(coc-codeaction-refactor)
 xmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Run the Code Lens action on the current line
 " chạy hành động Code Lens trên dòng hiện tại
 nmap <leader>cl  <Plug>(coc-codelens-action)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Map function and class text objects
 xmap if <Plug>(coc-funcobj-i)           " chọn các đối tượng hàm (function)
 omap if <Plug>(coc-funcobj-i)
@@ -124,7 +125,7 @@ xmap ic <Plug>(coc-classobj-i)          " chọn các đối tượng lớp (cla
 omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)          " chọn các đối tượng lớp (class)
 omap ac <Plug>(coc-classobj-a)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap <C-f> and <C-b> to scroll float windows/popups
 " <C-f> và <C-b> sẽ cuộn các cửa sổ nổi nếu chúng có nội dung có thể cuộn được
 if has('nvim-0.4.0') || has('patch-8.2.0750')
@@ -135,7 +136,7 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
   vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
   vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 endif
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Use CTRL-S for selections ranges
 " Requires 'textDocument/selectionRange' support of language server
 nmap <silent> <C-s> <Plug>(coc-range-select)
@@ -149,10 +150,10 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer
 command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Dòng trạng thái được cập nhật với tên hàm hiện tại và trạng thái của coc.nvim
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Mappings for CoCList
 " Show all diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
