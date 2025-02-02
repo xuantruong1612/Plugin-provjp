@@ -13,6 +13,9 @@ let g:NERDTreeWinSize = 23         " NERDTree chiếm 23%
 let g:NERDSpaceDelims = 1          " Khoảng trắng sau cmt
 let g:NERDTrimTrailingWhitespace = 1 " Bỏ Ktrắng sau cmt
 """"""""""""""""""""""""""""""""""""""""""""""""
+" Highlight in file
+let g:nerdtree_sync_cursorline = 1
+""""""""""""""""""""""""""""""""""""""""""""""""
 " F2 to toggle
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""
