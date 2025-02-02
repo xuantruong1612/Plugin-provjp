@@ -29,11 +29,3 @@ set wrap               " Mở rộng dòng
 set ignorecase         " K phân biệt hoa/thường
 set incsearch          " Hiển thị KQ k cần Enter
 """"""""""""""""""""""""""""""""""""""""""""""""
-" Disable automatic comment in newline
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
-
-" Close buffer without exitting vim 
-nnoremap <silent> <leader>bd :bp \| sp \| bn \| bd<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""
