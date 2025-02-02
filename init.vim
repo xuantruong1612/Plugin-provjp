@@ -55,11 +55,6 @@ hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" - Set up nvim itself -
-set noshowmode
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " - Source file -
 source ~/.config/nvim/nvimsettings/nerdtree.vim
 source ~/.config/nvim/nvimsettings/vim_airline.vim
