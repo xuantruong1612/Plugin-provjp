@@ -1,15 +1,38 @@
 " Woking with NERDTree
 """"""""""""""""""""""""""""""""""""""""""""""""
+
+" Thoát Nvim nếu còn mỗi NERDTree
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Show Book Mark 
 " "m" để mở menu và chọn add bookmark
 let g:NERDTreeShowBookmarks = 1    " Vào file hay dùng
 let g:NERDTreeWinSize = 23         " NERDTree chiếm 23%
 """"""""""""""""""""""""""""""""""""""""""""""""
+" F2 to toggle
+nnoremap <silent> <F2> :NERDTreeToggle<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Di chuyển giữa Windown
+nnoremap <C-h> <C-w>h           " trái h
+nnoremap <C-j> <C-w>j           " dưới j
+nnoremap <C-k> <C-w>k           " trên k
+nnoremap <C-l> <C-w>l           " phải l
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Di chuyển dòng được chọn lên/xuống
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Dán mà không ghi đè vào clipboard
+xnoremap <leader>p "_dP
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Mở hộp thoại chẩn đoán lỗi
+nnoremap <leader>e :lua vim.diagnostic.open_float()<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Git status icon
 " Modified  Tệp đã bị sửa nhưng chưa được git add
 " Staged    Tệp đã được git add, chuẩn bị commit
 " Untracked Tệp mới not follow (git add . để theo dõi)
-" Renamed   Tệp đã bị đổi tên hoặc di chuyể
+" Renamed   Tệp đã bị đổi tên hoặc di chuyển
 " Unmerged  Có xung đột (merge conflict) cần giải quyết
 " Deleted   Tệp đã bị xóa và thay đổi chưa được commit
 " Dirty     Có thay đổi thư mục working directory
@@ -29,14 +52,3 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Unknown'   :'?',
                 \ }
 """"""""""""""""""""""""""""""""""""""""""""""""
-" F2 to toggle
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""
-" Di chuyển giữa Windown
-nnoremap <C-h> <C-w>h           " trái h
-nnoremap <C-j> <C-w>j           " dưới j
-nnoremap <C-k> <C-w>k           " trên k
-nnoremap <C-l> <C-w>l           " phải l
-""""""""""""""""""""""""""""""""""""""""""""""""
-" Thoát Nvim nếu còn mỗi NERDTree
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
