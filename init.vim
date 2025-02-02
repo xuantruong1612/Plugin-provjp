@@ -18,7 +18,7 @@ call plug#begin('~/.config/nvim/plugged')
 source ~/.config/nvim/colors/theme.vim      " Dracula
 
 " - File browser -
-Plug 'preservim/nerdtre             " File browser
+Plug 'preservim/nerdtree'         " File browser
 Plug 'Xuyuanp/nerdtree-git-plugin'  " Git status
 
 " - File search -
@@ -31,7 +31,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " - Terminal -
-Plug 'voldikss/vim-floaterm      " Float terminal
+Plug 'voldikss/vim-floaterm'     " Float terminal
 
 " - Code intellisense (Tự hoàn thành code) -
 Plug 'neoclide/coc.nvim',
@@ -54,7 +54,6 @@ hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-
 " - Source file -
 source ~/.config/nvim/nvimsettings/nerdtree.vim
 source ~/.config/nvim/nvimsettings/vim_airline.vim

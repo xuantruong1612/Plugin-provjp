@@ -11,7 +11,7 @@ let g:NERDTreeWinSize = 23         " NERDTree chiếm 23%
 """"""""""""""""""""""""""""""""""""""""""""""""
 " F2 to toggle
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""
 " Di chuyển giữa Windown
 nnoremap <C-h> <C-w>h           " trái h
 nnoremap <C-j> <C-w>j           " dưới j
