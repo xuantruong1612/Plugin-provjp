@@ -1,4 +1,5 @@
 " Woking with FZF
+"""""""""""""""""""""""""""""""""""""""""""""
 
 " Files
 map <F6> :Files<CR>
