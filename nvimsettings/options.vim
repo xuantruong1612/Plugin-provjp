@@ -18,3 +18,9 @@ set synmaxcol=3000     " Max 3k ký tự before syntax highlight bị ngắt
 set lazyredraw         " Tối ưu hiệu suất khi vẽ lại
 
 
+
+" Tùy chọn giao diện (UI)
+set number             " Hiển thị số dòng
+set relativenumber     " Hiển thị số dòng tương đối
+
+
