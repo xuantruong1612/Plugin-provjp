@@ -13,8 +13,6 @@ let g:coc_global_extensions = [
       \'coc-vimlsp',
       \]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
-" utf-8 byte sequence
 " Đảm bảo rằng các tệp tin được xử lý với mã hóa UTF-8
 set encoding=utf-8
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -28,17 +26,10 @@ set nowritebackup
 " Giảm thời gian làm mới (mặc định là 4000ms)
 set updatetime=300
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved
 " Luôn hiển thị cột dấu (sign column) để văn bản không bị dịch chuyển khi xuất hiện các chẩn đoán lỗi
 set signcolumn=yes
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Use tab for trigger completion with characters ahead and navigate
-" NOTE: There's always complete item selected by default, you may want to enable
-" no select by `"suggest.noselect": true` in your configuration file
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " <TAB> kích hoạt danh sách hoàn thành nếu có, hoặc thêm một tab nếu không có đề xuất
 " <S-TAB> di chuyển ngược lại trong danh sách hoàn thành.
 inoremap <silent><expr> <TAB>
@@ -47,7 +38,6 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Make <CR> to accept selected completion item or notify coc.nvim to format
 " <CR> chấp nhận mục được chọn trong danh sách hoàn thành
 " <C-g>u breaks current undo, please make your own choice
 " <C-g>u Vim sẽ phá vỡ (break) trạng thái hoàn tác (undo) hiện tại
@@ -113,7 +103,6 @@ nmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>ac  <Plug>(coc-codeaction-cursor)
 " Remap keys for apply code actions affect whole buffer
 nmap <leader>as  <Plug>(coc-codeaction-source)
-" Apply the most preferred quickfix action to fix diagnostic on the current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap keys for applying refactor code actions
@@ -127,7 +116,6 @@ nmap <silent> <leader>r  <Plug>(coc-codeaction-refactor-selected)
 nmap <leader>cl  <Plug>(coc-codelens-action)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map function and class text objects
-" NOTE: Requires 'textDocument.documentSymbol' support from the language server
 xmap if <Plug>(coc-funcobj-i)           " chọn các đối tượng hàm (function)
 omap if <Plug>(coc-funcobj-i)
 xmap af <Plug>(coc-funcobj-a)           " chọn các đối tượng hàm (function)
@@ -162,9 +150,6 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " Add `:OR` command for organize imports of the current buffer
 command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Add (Neo)Vim's native statusline support
-" NOTE: Please see `:h coc-status` for integrations with external plugins that
-" provide custom statusline: lightline.vim, vim-airline
 " Dòng trạng thái được cập nhật với tên hàm hiện tại và trạng thái của coc.nvim
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

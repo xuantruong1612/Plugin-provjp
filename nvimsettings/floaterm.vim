@@ -16,7 +16,8 @@ hi Floaterm guibg=Grey15            " Màu nền (xám tối)
 hi FloatermBorder guifg=Orange guibg=DarkGreen     " Viền (cam), Nền viền (xanh lá)
 " hi FloatermNC guibg=darkred       " Non-focused window
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-autocmd User FloatermOpen           " Được kích hoạt sau khi mở một bộ nổi mới/tồn tại
+" Được kích hoạt sau khi mở một bộ nổi mới/tồn tại
+autocmd User FloatermOpen   
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Leader = " " = space
