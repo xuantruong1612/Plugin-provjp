@@ -2,7 +2,6 @@
 """""""""""""""""""""""""""""""""""""""""""""
 
 let g:airline_powerline_fonts = 1
-let g:airline_theme='onedark'      " OneDark
 
 let g:airline#extensions#tabline#enabled = 1            " Tab bar
 let g:airline#extensions#tabline#left_sep = ' '         " Tab seperator 

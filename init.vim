@@ -22,8 +22,7 @@ Plug 'preservim/nerdtree'           " File browser
 Plug 'Xuyuanp/nerdtree-git-plugin'  " Git status
 
 " - File search -
-Plug 'junegunn/fzf',
-	\ {'do': { -> fzf#install() } } " Fuzzy finder
+Plug 'junegunn/fzf', {'do': { -> fzf#install() } } " Fuzzy finder
 Plug 'junegunn/fzf.vim'
 
 " - Status bar -
@@ -36,7 +35,7 @@ Plug 'voldikss/vim-floaterm'     " Float terminal
 " - Code intellisense (Tự hoàn thành code) -
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Language server protocol (LSP)
 Plug 'jiangmiao/auto-pairs'      " Parenthesis auto () {} []
-" Plug 'mattn/emmet-vim' 
+Plug 'mattn/emmet-vim' 
 Plug 'preservim/nerdcommenter'   " Comment code  cc, uncmt  cu
 
 call plug#end()
