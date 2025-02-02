@@ -22,12 +22,6 @@ nnoremap <C-l> <C-w>l           " phải l
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 """"""""""""""""""""""""""""""""""""""""""""""""
-" Dán mà không ghi đè vào clipboard
-xnoremap <leader>p "_dP
-""""""""""""""""""""""""""""""""""""""""""""""""
-" Mở hộp thoại chẩn đoán lỗi
-nnoremap <leader>e :lua vim.diagnostic.open_float()<CR>
-""""""""""""""""""""""""""""""""""""""""""""""""
 " Git status icon
 " Modified  Tệp đã bị sửa nhưng chưa được git add
 " Staged    Tệp đã được git add, chuẩn bị commit
