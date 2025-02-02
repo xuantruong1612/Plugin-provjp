@@ -25,7 +25,7 @@ set nowritebackup
 " Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
 " delays and poor user experience
 " Giảm thời gian làm mới (mặc định là 4000ms)
-set updatetime=300
+set updatetime=3000
 """"""""""""""""""""""""""""""""""""""""""""""""
 " diagnostics appear/become resolved
 " Luôn hiển thị cột dấu (sign column) để văn bản không bị dịch chuyển khi xuất hiện các chẩn đoán lỗi
