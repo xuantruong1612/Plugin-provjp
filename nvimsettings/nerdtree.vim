@@ -5,9 +5,6 @@
 let g:NERDTreeShowBookmarks = 1    " vào file hay dùng
 let g:NERDTreeWinSize = 23         " NERDTree chiếm 23%
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
-" Mapleader
-let mapleader = " "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Git status icon
 " Modified  Tệp đã bị sửa nhưng chưa được git add
 " Staged    Tệp đã được git add, chuẩn bị commit
@@ -31,9 +28,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'CLEAN',
                 \ 'Unknown'   :'?',
                 \ }
-""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Hightlight current file
-let g:nerdtree_synsc_cursorline = 1    " cursor line
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " F2 to toggle
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
