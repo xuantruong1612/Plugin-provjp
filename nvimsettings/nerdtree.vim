@@ -9,6 +9,10 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 let g:NERDTreeShowBookmarks = 1    " Vào file hay dùng
 let g:NERDTreeWinSize = 23         " NERDTree chiếm 23%
 """"""""""""""""""""""""""""""""""""""""""""""""
+" Commenter
+let g:NERDSpaceDelims = 1          " Khoảng trắng sau cmt
+let g:NERDTrimTrailingWhitespace = 1 " Bỏ Ktrắng sau cmt
+""""""""""""""""""""""""""""""""""""""""""""""""
 " F2 to toggle
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""
