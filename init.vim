@@ -31,6 +31,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 " - Terminal -
 Plug 'voldikss/vim-floaterm'     " Float terminal
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 
 " - Code intellisense (Tự hoàn thành code) -
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Language server protocol (LSP)
@@ -60,4 +61,6 @@ source ~/.config/nvim/nvimsettings/fzf.vim
 source ~/.config/nvim/nvimsettings/floaterm.vim
 source ~/.config/nvim/nvimsettings/coc.vim
 source ~/.config/nvim/nvimsettings/options.vim
+source ~/.config/nvim/nvimsettings/toggleterm.vim
+
 """"""""""""""""""""""""""""""""""""""""""
