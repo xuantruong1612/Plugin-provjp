@@ -34,11 +34,10 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
 ```c
    **.local/share/nvim/site/autoload/plug.vim**
  ```
-    
+**Nếu không có thì ***tự tạo*** file tương ứng**
  2. Copy code [**này**](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào ***plug.vim***
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-# **Nếu không có thì ***tự tạo*** file tương ứng**
-ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+ ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
 # Install
 ```c
 git clone https://github.com/xuantruong1612/nvim.git
