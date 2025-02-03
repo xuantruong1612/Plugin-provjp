@@ -20,10 +20,6 @@ source ~/.config/nvim/colors/theme.vim      " Dracula
 " - File browser -
 Plug 'preservim/nerdtree'           " File browser
 Plug 'Xuyuanp/nerdtree-git-plugin'  " Git status
-Plug 'ryanoasis/vim-devicons'                 " Icon
-Plug 'unkiwii/vim-nerdtree-sync'              " Sync current file 
-Plug 'jcharum/vim-nerdtree-syntax-highlight',
-    \ {'branch': 'escape-keys'}
 
 " - File search -
 Plug 'junegunn/fzf', {'do': { -> fzf#install() } } " Fuzzy finder
