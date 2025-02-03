@@ -2,7 +2,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Mapleader
-let mapleader = "\t"
+let mapleader = " "
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Mouse
 set mouse=a            
@@ -28,3 +28,20 @@ set wrap               " Mở rộng dòng
 set ignorecase         " K phân biệt hoa/thường
 set incsearch          " Hiển thị KQ k cần Enter
 """"""""""""""""""""""""""""""""""""""""""""""""
+" Disable backup
+set nobackup
+set nowb
+set noswapfile
+
+" Auto reload content changed outside
+au CursorHold,CursorHoldI * checktime
+au FocusGained,BufEnter * :checktime
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI *
+    \ if mode() !~ '\v(c|r.?|!|t)' && getcmdwintype() == ''
+      \ | checktime 
+    \ | endif
+autocmd FileChangedShellPost *
+    \ echohl WarningMsg 
+    \ | echo "File changed on disk. Buffer reloaded."
+    \ | echohl None
+
