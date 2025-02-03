@@ -9,7 +9,7 @@
 "https://github.com/xuantruong1612
 
 """"""""""""""""""""""""""""""""""""""""""""
-
+lua print('Xuan Truong xin chao ban...')
 """"""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin('~/.config/nvim/plugged')
