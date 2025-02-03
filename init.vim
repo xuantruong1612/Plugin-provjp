@@ -8,9 +8,16 @@
 
 "https://github.com/xuantruong1612
 
+<<<<<<< HEAD
 """"""""""""""""""""""""""""""""""""""""""""
 lua print('Xuan Truong xin chao ban...')
 """"""""""""""""""""""""""""""""""""""""""""
+=======
+
+"""""""""""""""""""""""""""""""""""""""""""""
+lua print ("Xuantruong...")
+"""""""""""""""""""""""""""""""""""""""""""""
+>>>>>>> 5c45efe (update)
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -52,9 +59,10 @@ hi! Normal ctermbg=NONE guibg=NONE
 hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
 
 """"""""""""""""""""""""""""""""""""""""""
-" - Source file -
+
+"- Source file -
 source ~/.config/nvim/nvimsettings/nerdtree.vim
-source ~/.config/nvim/nvimsettings/vim_airline.vim
+source ~/.config/nvim/nvimsettings/airline.vim
 source ~/.config/nvim/nvimsettings/fzf.vim
 source ~/.config/nvim/nvimsettings/floaterm.vim
 source ~/.config/nvim/nvimsettings/coc.vim
