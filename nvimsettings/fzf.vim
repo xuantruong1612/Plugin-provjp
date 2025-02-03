@@ -3,7 +3,6 @@
 
 " Files
 map <F6> :Files<CR>
-map <C-F6> :History<CR>
 """""""""""""""""""""""""""""""""""""""""""""
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.5, 'highlight': 'Comment' } }
 """""""""""""""""""""""""""""""""""""""""""""

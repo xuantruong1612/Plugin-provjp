@@ -32,3 +32,5 @@ set incsearch          " Hiển thị KQ k cần Enter
 set nobackup
 set nowb
 set noswapfile
+""""""""""""""""""""""""""""""""""""""""""""""""
+
