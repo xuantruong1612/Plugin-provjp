@@ -33,3 +33,9 @@ set nobackup
 set nowb
 set noswapfile
 """"""""""""""""""""""""""""""""""""""""""""""""
+" Resize pane
+nmap <M-l> :vertical resize +1<CR>    
+nmap <M-h> :vertical resize -1<CR>
+nmap <M-j> :resize +1<CR>
+nmap <M-k> :resize -1<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""
