@@ -8,16 +8,9 @@
 
 "https://github.com/xuantruong1612
 
-<<<<<<< HEAD
 """"""""""""""""""""""""""""""""""""""""""""
-lua print('Xuan Truong xin chao ban...')
-""""""""""""""""""""""""""""""""""""""""""""
-=======
-
-"""""""""""""""""""""""""""""""""""""""""""""
 lua print ("Xuantruong...")
 """""""""""""""""""""""""""""""""""""""""""""
->>>>>>> 5c45efe (update)
 
 call plug#begin('~/.config/nvim/plugged')
 
