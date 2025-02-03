@@ -7,10 +7,15 @@ let g:floaterm_width = 0.5             " Rộng
 let g:floaterm_height = 1.0            " Dài
 let g:floaterm_title = 'Terminal $1/$2'
 let g:floaterm_wintype = 'float'       " Dạng nổi
-let g:floaterm_rootmarkers = ['.pro']
-if has('win32')
+if has('win64')
 	let g:floaterm_shell = 'powershell -nologo'
 endif
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Size
+nnoremap <M-l> :let g:floaterm_width = g:floaterm_width + 0.1<CR>
+nnoremap <M-h> :let g:floaterm_width = g:floaterm_width - 0.1<CR>
+nnoremap <M-k> :let g:floaterm_height = g:floaterm_height + 0.1<CR>
+nnoremap <M-j> :let g:floaterm_height = g:floaterm_height - 0.1<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Set color
 hi Floaterm guibg=White            " Màu nền (xám tối)
