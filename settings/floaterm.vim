@@ -11,6 +11,10 @@ if has('win64')
 	let g:floaterm_shell = 'powershell -nologo'
 endif
 """"""""""""""""""""""""""""""""""""""""""""""""
+" Size
+tnoremap <M-l> :let g:floaterm_width = g:floaterm_width + 0.05<CR>
+tnoremap <M-h> :let g:floaterm_width = g:floaterm_width - 0.05<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Set color
 hi Floaterm guibg=White            " Màu nền (xám tối)
 hi FloatermBorder guifg=Pink guibg=turquoise     " Viền (cam), Nền viền (xanh lá)
