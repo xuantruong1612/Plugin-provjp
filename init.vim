@@ -40,7 +40,8 @@ Plug 'mattn/emmet-vim'
 Plug 'preservim/nerdcommenter'   " Comment code  cc, uncmt  cu
 
 call plug#end()
-
+" Phím tắt để đóng ngoặc ngay sau khi nhập dấu mở
+inoremap <Leader>c <Esc>pa
 """"""""""""""""""""""""""""""""""""""""""
 
 " - Theme -
