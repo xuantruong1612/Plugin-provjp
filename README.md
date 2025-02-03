@@ -27,6 +27,7 @@ curl -fLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs \
 md -Path "$HOME\AppData\Local\nvim\autoload" -ErrorAction Ignore
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile "$HOME\AppData\Local\nvim\autoload\plug.vim"
 ```
+***
 # Nếu k tải được *tài nguyên* thì có thể tải thủ công
 - **Linux, MacOs:**
 
@@ -34,7 +35,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/mast
 ```c
    .local/share/nvim/site/autoload/plug.vim
  ```
-  **Nếu không có thì ***tự tạo*** file tương ứng**
+   **Nếu không có thì ***tự tạo*** file tương ứng**
 
  2. Copy code [**này**](https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim) dán vào ***plug.vim***
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤ
