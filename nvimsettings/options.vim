@@ -62,4 +62,28 @@ for setting_file in split(glob(stdpath('config').'/settings/*.vim'))
   execute 'source' setting_file
 endfor
 
+set termguicolors
+autocmd VimEnter * call s:setup_lualine()
+function! s:setup_lualine() abort
+lua<<EOF
+require("bufferline").setup{
+  options = {
+    indicator = {
+      style = 'none',
+    },
+    diagnostics = "coc",
+  }
+}
+EOF
+endfunction
+
+" Overwrite some color highlight 
+if (has("autocmd"))
+  augroup colorextend
+    autocmd ColorScheme 
+      \ * call onedark#extend_highlight("Comment",{"fg": {"gui": "#728083"}})
+    autocmd ColorScheme 
+      \ * call onedark#extend_highlight("LineNr", {"fg": {"gui": "#728083"}})
+  augroup END
+endif
 
