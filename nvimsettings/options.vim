@@ -45,3 +45,6 @@ autocmd FileChangedShellPost *
     \ | echo "File changed on disk. Buffer reloaded."
     \ | echohl None
 
+" Search a hightlighted text
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+nmap /\ :noh<CR
