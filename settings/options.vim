@@ -33,5 +33,8 @@ set nobackup
 set nowb
 set noswapfile
 """"""""""""""""""""""""""""""""""""""""""""""""
-vnoremap <C-o> <Esc>
-nnoremap <leader>( ciw(
+" () {} []
+nnoremap <leader>( bi(<Esc>A)<Esc>
+nnoremap <leader>{ bi{<Esc>A}<Esc>
+nnoremap <leader>[ bi[<Esc>A]<Esc>
+""""""""""""""""""""""""""""""""""""""""""""""""
