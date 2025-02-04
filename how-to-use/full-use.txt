@@ -1,0 +1,67 @@
+Woking with FULL-USE
+""""""""""""""""""""""""""""""""""""""""""""
+
+1. Điều hướng
+h: Di chuyển con trỏ sang trái
+j: Di chuyển con trỏ xuống dưới
+k: Di chuyển con trỏ lên trên
+l: Di chuyển con trỏ sang phải
+w: Di chuyển con trỏ tới đầu từ tiếp theo
+b: Di chuyển con trỏ lùi lại đầu từ trước
+0: Di chuyển con trỏ tới đầu dòng
+$: Di chuyển con trỏ tới cuối dòng
+gg: Di chuyển con trỏ về đầu tài liệu
+G: Di chuyển con trỏ đến cuối tài liệu
+""""""""""""""""""""""""""""""""""""""""""""
+2. Chế độ chỉnh sửa
+i: Vào chế độ Insert trước con trỏ
+I: Vào chế độ Insert tại đầu dòng
+a: Vào chế độ Insert sau con trỏ
+A: Vào chế độ Insert tại cuối dòng
+o: Thêm dòng mới phía dưới và vào chế độ Insert
+O: Thêm dòng mới phía trên và vào chế độ Insert
+Esc: Quay lại chế độ Normal
+""""""""""""""""""""""""""""""""""""""""""""
+3. Chỉnh sửa văn bản
+x: Xóa ký tự dưới con trỏ
+dd: Xóa một dòng
+dw: Xóa một từ từ con trỏ tới cuối từ
+d$: Xóa từ con trỏ đến cuối dòng
+yy: Sao chép (yank) một dòng
+yw: Sao chép (yank) một từ
+p: Dán (paste) sau con trỏ
+P: Dán (paste) trước con trỏ
+u: Hoàn tác thao tác trước đó
+Ctrl + r: Làm lại thao tác đã hoàn tác
+""""""""""""""""""""""""""""""""""""""""""""
+4. Tìm kiếm
+/từ khóa: Tìm kiếm từ khóa trong tài liệu
+?từ khóa: Tìm kiếm ngược lại từ khóa trong tài liệu
+n: Di chuyển đến kết quả tìm kiếm tiếp theo
+N: Di chuyển đến kết quả tìm kiếm trước đó
+""""""""""""""""""""""""""""""""""""""""""""
+5. Lưu và thoát
+:w: Lưu tệp
+:q: Thoát nếu không có thay đổi
+:q!: Thoát mà không lưu thay đổi
+:wq hoặc :x: Lưu và thoát
+:w filename: Lưu tệp với tên mới
+ZZ: Lưu và thoát (tương tự :wq)
+""""""""""""""""""""""""""""""""""""""""""""
+6. Chế độ Visual
+v: Vào chế độ Visual (chọn ký tự)
+V: Vào chế độ Visual Line (chọn cả dòng)
+Ctrl + v: Vào chế độ Visual Block (chọn khối văn bản)
+""""""""""""""""""""""""""""""""""""""""""""
+7. Quản lý cửa sổ
+:split hoặc :sp: Chia cửa sổ ngang
+:vsplit hoặc :vs: Chia cửa sổ dọc
+Ctrl + w + h/j/k/l: Chuyển đổi giữa các cửa sổ (trái, xuống, lên, phải)
+Ctrl + w + q: Đóng cửa sổ hiện tại
+""""""""""""""""""""""""""""""""""""""""""""
+8. Tạo và mở tệp
+:e filename: Mở tệp
+:new: Tạo tệp mới trong cửa sổ mới
+:bnext hoặc :bn: Chuyển đến tệp kế tiếp trong danh sách buffer
+:bprev hoặc :bp: Chuyển đến tệp trước đó trong danh sách buffer
+""""""""""""""""""""""""""""""""""""""""""""
