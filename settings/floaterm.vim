@@ -11,8 +11,8 @@ if has('win64')
 endif
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Size
-tnoremap <M-l> :let g:floaterm_width = g:floaterm_width + 0.05<CR>
-tnoremap <M-h> :let g:floaterm_width = g:floaterm_width - 0.05<CR>
+tnoremap <M-l> <C-\><C-n>:let g:floaterm_width = g:floaterm_width + 0.05<CR>:FloatermUpdate<CR>i
+tnoremap <M-h> <C-\><C-n>:let g:floaterm_width = g:floaterm_width - 0.05<CR>:FloatermUpdate<CR>i
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Set color
 hi Floaterm guibg=White            " Màu nền (xám tối)
