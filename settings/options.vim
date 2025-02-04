@@ -11,10 +11,10 @@ set mouse=a
 set noshowmode
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Tùy chọn giao diện (UI)
-set number             " Số dòng
-set relativenumber     " Số dòng tương đối
-set cursorline         " Highlight dòng hiện tại
-set clipboard=unnamed  " Clipboard
+set number                 " Số dòng
+set relativenumber         " Số dòng tương đối
+set cursorline             " Highlight dòng hiện tại
+set clipboard=unnamedplus  " Clipboard
 set colorcolumn=90
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Editing
