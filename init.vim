@@ -35,7 +35,6 @@ Plug 'voldikss/vim-floaterm'     " Float terminal
 
 " - Code intellisense (Tự hoàn thành code) -
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Language server protocol (LSP)
-" Plug 'jiangmiao/auto-pairs'      " Parenthesis auto () {} []
 Plug 'mattn/emmet-vim' 
 Plug 'preservim/nerdcommenter'   " Comment code  cc, uncmt  cu
 

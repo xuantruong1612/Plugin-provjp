@@ -37,4 +37,11 @@ set noswapfile
 nnoremap (( bi(<Esc>ea)<Esc>
 nnoremap {{ bi{<Esc>ea}<Esc>
 nnoremap [[ bi[<Esc>ea]<Esc>
+nnoremap "" bi"<Esc>ea"<Esc>
+nnoremap '' bi'<Esc>ea'<Esc>
+inoremap (( ()<Esc>i
+inoremap {{ {}<Esc>i
+inoremap [[ []<Esc>i
+inoremap '' ''<Esc>i
+inoremap "" ""<Esc>i
 """"""""""""""""""""""""""""""""""""""""""""""""
