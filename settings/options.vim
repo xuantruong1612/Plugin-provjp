@@ -34,7 +34,7 @@ set nowb
 set noswapfile
 """"""""""""""""""""""""""""""""""""""""""""""""
 " () {} []
-nnoremap <leader>( bi(<Esc>A)<Esc>
-nnoremap <leader>{ bi{<Esc>A}<Esc>
-nnoremap <leader>[ bi[<Esc>A]<Esc>
+nnoremap (( bi(<Esc>ea)<Esc>
+nnoremap {{ bi{<Esc>ea}<Esc>
+nnoremap [[ bi[<Esc>ea]<Esc>
 """"""""""""""""""""""""""""""""""""""""""""""""
