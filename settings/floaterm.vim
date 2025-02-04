@@ -11,7 +11,7 @@ if has('win64')
 endif
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Size
-tmap <M-l> <S-h> command! Run let g:floaterm_width = g:floaterm_width + 0.1<CR><S-h>
+tmap <M-l> <Esc>:call feedkeys("let g:floaterm_width = g:floaterm_width + 0.1", 'n')<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Set color
 hi Floaterm guibg=White            " Màu nền (xám tối)
