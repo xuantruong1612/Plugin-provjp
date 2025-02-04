@@ -33,3 +33,5 @@ set nobackup
 set nowb
 set noswapfile
 """"""""""""""""""""""""""""""""""""""""""""""""
+vnoremap <C-o> <Esc>
+nnoremap <leader>( 
