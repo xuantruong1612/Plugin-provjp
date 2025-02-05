@@ -11,8 +11,8 @@ if has('win64')
 endif
 """""""""""""""""""""""""""""""""""""""""""""""
 " Size
-tmap <M-l> <S-h>:let g:floaterm_width = g:floaterm_width + 0.05<CR><F3>llddd<S-h><S-h>
-tmap <M-h> <S-h>:let g:floaterm_width = g:floaterm_width - 0.05<CR><F3>llddd<S-h><S-h>
+tmap <M-h> <S-h>:let g:floaterm_width = g:floaterm_width + 0.05<CR><F3>llddd<S-h><S-h>
+tmap <M-l> <S-h>:let g:floaterm_width = g:floaterm_width - 0.05<CR><F3>llddd<S-h><S-h>
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Set color
 hi Floaterm guibg=White            " Màu nền (xám tối)

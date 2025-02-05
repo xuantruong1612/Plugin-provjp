@@ -48,6 +48,7 @@ inoremap " ""<Esc>i
 " Copy, paste, undo
 vnoremap <C-c> y
 inoremap <C-v> <C-r>+<Esc>:let @"=getreg('+')<CR>a
+nnoremap <C-v> <C-r>+<Esc>:let @"=getreg('+')<CR>a
 nnoremap <C-v> p
 nnoremap <C-z> u       " Undo
 """"""""""""""""""""""""""""""""""""""""""""""""

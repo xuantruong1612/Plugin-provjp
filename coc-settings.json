@@ -36,8 +36,8 @@
         "executable.command": "jedi-language-server",
 
     },
-    "languageserver": { 
-        // C++
+    "languageserver": {
+        //C++
         "ccls": {
             "command": "ccls",
             "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],

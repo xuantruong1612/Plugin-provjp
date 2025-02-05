@@ -60,4 +60,5 @@ source ~/.config/nvim/settings/fzf.vim
 source ~/.config/nvim/settings/floaterm.vim
 source ~/.config/nvim/settings/coc.vim
 source ~/.config/nvim/settings/options.vim
+
 """"""""""""""""""""""""""""""""""""""""""
