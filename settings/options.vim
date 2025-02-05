@@ -39,9 +39,15 @@ nnoremap {{ bi{<Esc>ea}<Esc>
 nnoremap [[ bi[<Esc>ea]<Esc>
 nnoremap "" bi"<Esc>ea"<Esc>
 nnoremap '' bi'<Esc>ea'<Esc>
-inoremap <leader>( ()<Esc>i
-inoremap <leader>{ {}<Esc>i
-inoremap <leader>[ []<Esc>i
-inoremap <leader>' ''<Esc>i
-inoremap <leader>" ""<Esc>i
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap [ []<Esc>i
+inoremap ' ''<Esc>i
+inoremap " ""<Esc>i
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Copy, paste, undo
+vnoremap <C-c> y
+inoremap <C-v> <C-r>+<Esc>:let @"=getreg('+')<CR>a
+nnoremap <C-v> p
+nnoremap <C-z> u       " Undo
 """"""""""""""""""""""""""""""""""""""""""""""""
