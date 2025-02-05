@@ -27,7 +27,7 @@ autocmd User FloatermOpen
 
 " Open a new terminal
 " nnoremap <silent> <F3> :FloatermNew<CR>
-" tnoremap <silent> <F3> <C-\><C-n>:FloatermNew<CR>
+tnoremap <silent> <F3> <C-\><C-n>:FloatermNew<CR>
 
 " Tắt terminal
 tnoremap <silent>ddd <C-\><C-n>:FloatermKill<CR>:FloatermPrev<CR>
@@ -42,4 +42,32 @@ tnoremap <silent> <S-h> <C-\><C-n>:FloatermToggle<CR>
 " Focus terminal
 " nnoremap <silent> <leader>tf <C-\><C-n><C-W><Left>
 " tnoremap <silent> <leader>tf <C-\><C-n><C-W><Left>
+""""""""""""""""""""""""""""""""""""""""""""""""
+function! RunOrOpenFloaterm()
+  " Lưu tệp hiện tại
+  write
+  " Chạy chương trình theo filetype
+  if &filetype == 'python'
+    execute 'FloatermNew python3 ' . expand('%')
+  elseif &filetype == 'c'
+    let executable = expand('%:r')  " Lấy tên tệp không có đuôi
+    execute 'FloatermNew bash -c "gcc ' . expand('%') . ' -o ' . executable . ' && ./' . executable . '"'
+  elseif &filetype == 'cpp'
+    let executable = expand('%:r')  " Lấy tên tệp không có đuôi
+    execute 'FloatermNew bash -c "g++ ' . expand('%') . ' -o ' . executable . ' && ./' . executable . '"'
+  elseif &filetype == 'ruby'
+    execute 'FloatermNew ruby ' . expand('%')
+  elseif &filetype == 'go'
+    execute 'FloatermNew go run ' . expand('%')
+  elseif &filetype == 'java'
+    let executable = expand('%:r')  " Lấy tên tệp không có đuôi
+    execute 'FloatermNew bash -c "javac ' . expand('%') . ' && java ' . executable . '"'
+  else
+    " Nếu không phải loại file được hỗ trợ, mở Floaterm với terminal
+    execute 'FloatermNew bash'
+  endif
+endfunction
+
+" Gán phím F3 để mở Floaterm hoặc chạy code
+nnoremap <silent> <F3> :call RunOrOpenFloaterm()<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""
