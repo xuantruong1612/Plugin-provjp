@@ -26,8 +26,8 @@ autocmd User FloatermOpen
 """"""""""""""""""""""""""""""""""""""""""""""""
 
 " Open a new terminal
-nnoremap <silent> <F3> :FloatermNew<CR>
-tnoremap <silent> <F3> <C-\><C-n>:FloatermNew<CR>
+" nnoremap <silent> <F3> :FloatermNew<CR>
+" tnoremap <silent> <F3> <C-\><C-n>:FloatermNew<CR>
 
 " Tắt terminal
 tnoremap <silent>ddd <C-\><C-n>:FloatermKill<CR>:FloatermPrev<CR>
