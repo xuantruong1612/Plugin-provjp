@@ -1,7 +1,7 @@
 " Woking with OPTIONS
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-lua print("Xuan Truong...")
+lua print("--- Xuan Truong ---")
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Mapleader
 let mapleader = " "
