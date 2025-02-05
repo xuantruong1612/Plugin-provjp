@@ -9,14 +9,12 @@
 "https://github.com/xuantruong1612
 
 
-""""""""""""""""""""""""""""""""""""""""""""
-lua print ("Xuantruong...")
 """""""""""""""""""""""""""""""""""""""""""""
 
 call plug#begin('~/.config/nvim/plugged')
 
 " - Theme -
-source ~/.config/nvim/colors/theme.vim      " Dracula
+Plug 'dracula/vim', { 'as': 'dracula' }    " Dracula
 
 " - File browser -
 Plug 'preservim/nerdtree'           " File browser

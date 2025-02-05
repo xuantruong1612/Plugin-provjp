@@ -69,13 +69,14 @@
             }
         }
     },
-    "python.pythonPath": "/path/to/your/python",   // Đường dẫn tới Python bạn đang sử dụng (môi trường ảo hoặc hệ thống)
-    "python.autoComplete": true,                     // Bật tự động hoàn thành
-    "python.linting.enabled": true,                  // Bật kiểm tra lỗi
-    "python.linting.pylintEnabled": true,            // Sử dụng pylint để kiểm tra lỗi (có thể thay bằng flake8, pyflakes...)
-    "python.formatting.autopep8Path": "autopep8",    // Định dạng mã Python tự động với autopep8
-    "python.analysis.indexing": true,                // Chỉ mục mã để tối ưu việc tìm kiếm
-    "python.analysis.autoSearchPaths": true,         // Tự động tìm kiếm các thư viện và tệp liên quan
-    "python.analysis.diagnosticMode": "workspace"   // Chế độ kiểm tra lỗi cho toàn bộ dự án
+    // Python 
+    "languageserver": {
+        "python": {
+            "command": "/home/xuantruong/.local/bin/jedi-language-server",
+            "filetypes": ["python"],
+            "initializationOptions": {}
+    }
+  }
 }
+   
 

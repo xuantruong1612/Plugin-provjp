@@ -1,6 +1,8 @@
 " Woking with OPTIONS
 """"""""""""""""""""""""""""""""""""""""""""""""
 
+lua print("Xuan Truong...")
+""""""""""""""""""""""""""""""""""""""""""""""""
 " Mapleader
 let mapleader = " "
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -46,9 +48,9 @@ inoremap ' ''<Esc>i
 inoremap " ""<Esc>i
 """"""""""""""""""""""""""""""""""""""""""""""""
 " Copy, paste, undo
-vnoremap <C-c> y
-inoremap <C-v> <C-r>+<Esc>:let @"=getreg('+')<CR>a
-nnoremap <C-v> <C-r>+<Esc>:let @"=getreg('+')<CR>a
-nnoremap <C-v> p
-nnoremap <C-z> u       " Undo
+vnoremap <silent> <C-c> y
+inoremap <silent> <C-v> <C-r>+<Esc>:let @"=getreg('+')<CR>a
+nnoremap <silent> <C-v> <C-r>+<Esc>:let @"=getreg('+')<CR>a
+nnoremap <silent> <C-v> p
+nnoremap <silent> <C-z> u       " Undo
 """"""""""""""""""""""""""""""""""""""""""""""""
