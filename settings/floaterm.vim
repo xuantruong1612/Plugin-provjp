@@ -51,10 +51,12 @@ function! RunOrOpenFloaterm()
     execute 'FloatermNew python3 ' . expand('%')
   elseif &filetype == 'c'
     let executable = expand('%:r')  " Lấy tên tệp không có đuôi
-    execute 'FloatermNew bash -c "gcc ' . expand('%') . ' -o ' . executable . ' && ./' . executable . '"'
+    execute 'FloatermNew bash -c "gcc ' .expand('%')
+                \.' -o ' .executable .'&& ./' .executable .'"'
   elseif &filetype == 'cpp'
     let executable = expand('%:r')  " Lấy tên tệp không có đuôi
-    execute 'FloatermNew bash -c "g++ ' . expand('%') . ' -o ' . executable . ' && ./' . executable . '"'
+    execute 'FloatermNew bash -c "g++ ' .expand('%')
+                \.' -o ' .executable .'&& ./' .executable .'"'
   elseif &filetype == 'ruby'
     execute 'FloatermNew ruby ' . expand('%')
   elseif &filetype == 'go'

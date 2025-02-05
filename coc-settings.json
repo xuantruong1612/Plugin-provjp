@@ -38,26 +38,18 @@
     "languageserver": {
         // C++ configuration
         "ccls": {
-            "command": "ccls",
+            "command": "/usr/bin/ccls",
             "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
-            "rootPatterns": [".ccls", "compile_commands.json"],
+            "rootPatterns": [".ccls", "compile_commands.json", ".git/"],
+            "trace.server": "verbose",
             "initializationOptions": {
                 "cache": {
-                    "directory": ".ccls-cache",
-                    "format": "binary"
-                },
-                "client": {
-                    "snippetSupport": true
-                },
-                "index": {
-                    "onChange": true
-                },
-                "highlight": {
-                    "lsRanges": true
-                }
+                    "directory": "/tmp/ccls-cache"
             }
-        },
-        // CMake configuration
+        }
+    }
+}
+                // CMake configuration
         "cmake": {
             "command": "cmake-language-server",
             "filetypes": ["cmake"],
