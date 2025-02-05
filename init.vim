@@ -60,3 +60,28 @@ source ~/.config/nvim/settings/coc.vim
 source ~/.config/nvim/settings/options.vim
 
 """"""""""""""""""""""""""""""""""""""""""
+function! RunOrOpenFloaterm()
+  " Nếu Floaterm chưa mở, mở Floaterm trống
+  if !exists('g:floaterm_opened') || g:floaterm_opened == 0
+    execute 'FloatermToggle'
+    let g:floaterm_opened = 1
+  else
+    " Lưu tệp hiện tại
+    write
+    " Chạy chương trình theo filetype
+    if &filetype == 'python'
+      execute 'FloatermNew python3 ' . expand('%')
+    elseif &filetype == 'c'
+      let executable = expand('%:r')  " Lấy tên tệp không có đuôi
+      execute 'FloatermNew bash -c "gcc ' . expand('%') . ' -o ' . executable . ' && ./' . executable . '; exec bash"'
+    elseif &filetype == 'cpp'
+      let executable = expand('%:r')  " Lấy tên tệp không có đuôi
+      execute 'FloatermNew bash -c "g++ ' . expand('%') . ' -o ' . executable . ' && ./' . executable . '; exec bash"'
+    else
+      echo "Unsupported filetype: " . &filetype
+    endif
+  endif
+endfunction
+
+" Gán phím F3 để mở Floaterm hoặc chạy code
+nnoremap <silent> <F3> :call RunOrOpenFloaterm()<CR>
