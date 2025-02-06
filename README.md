@@ -48,12 +48,14 @@ git clone https://github.com/xuantruong1612/nvim.git
 # Chú ý
 Khi dùng *plugins* thì trong ***init.vim*** nhớ ***:PlugInstall*** nhé!!!
 
-<details>ㅤㅤㅤㅤㅤㅤㅤㅤ
-<summary>Ưu tiên</summary>
-<p align="left">Nodejs (Mới nhất nếu có thể)
-<p align="left">Python
-</details>
-
+# Nvim New
+```c
+snap version
+sudo apt update
+sudo apt install snapd
+sudo systemctl enable --now snapd
+sudo apt install nvim --classic
+```
 ---
 <details>ㅤㅤㅤㅤㅤㅤㅤㅤ
 <summary>Ngoài lề</summary>
