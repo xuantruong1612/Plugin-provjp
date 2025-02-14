@@ -24,8 +24,9 @@ curl -fLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs \
 ```
 *2. PowerShell*
 ```c
-md -Path "$HOME\AppData\Local\nvim\autoload" -ErrorAction Ignore
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim" -OutFile "$HOME\AppData\Local\nvim\autoload\plug.vim"
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop install neovim
 ```
 ***
 # Nếu k tải được *tài nguyên* thì có thể tải thủ công
